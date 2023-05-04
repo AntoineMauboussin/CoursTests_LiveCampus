@@ -14,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test_1
-        run: echo "Test 1"
+        run: npm run test
         shell: bash
