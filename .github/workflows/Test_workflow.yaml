@@ -1,0 +1,17 @@
+name: Test Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test_1:
+    runs-on: unbuntu-latest
+      - name: test_1
+        run: echo "Test 1"
+        shell: bash
