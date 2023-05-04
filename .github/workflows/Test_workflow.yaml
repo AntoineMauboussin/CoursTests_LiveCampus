@@ -13,5 +13,12 @@ jobs:
   test_1:
     runs-on: ubuntu-latest
     steps:
-      - name: test_1
-        run: npm run test
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with: 
+          node-version: "14.x"
+      - name: Install dependencies
+        run: npm install
+      - name: Run test
+        run: npm test
