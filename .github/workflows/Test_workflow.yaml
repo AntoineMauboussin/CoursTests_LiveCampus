@@ -13,7 +13,8 @@ jobs:
   test_1:
     runs-on: ubuntu-latest
     steps:
-      - name: Test
+      - name: File
         uses: ./
+      - name: Test
         run: |
           npm run test
