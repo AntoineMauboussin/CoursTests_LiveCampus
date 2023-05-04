@@ -13,6 +13,7 @@ jobs:
   test_1:
     runs-on: ubuntu-latest
     steps:
-      - name: Build
+      - name: Test
+        uses: ./
         run: |
           npm run test
