@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - .:\Users\r_kev\Documents\Cours\CoursTests_LiveCampus
+      - .:\Users\r_kev\Documents\Cours\CoursTests_LiveCampus\node_modules
+    ports:
+      - 3000:3000
